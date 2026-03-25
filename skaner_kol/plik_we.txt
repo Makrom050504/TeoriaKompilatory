@@ -1,0 +1,6 @@
+int res = 0
+for (i in list){
+    if (res != 10){
+    res = res+1
+    }
+}
