@@ -33,11 +33,12 @@ class Lexer:
 
             slowo = self.text[start:self.i]
             if slowo in ["if", "print", "for", "while"]:
-                return ("LOGIC", slowo)
+                return ("KEYWORD", slowo)
             
             if slowo in ["int", "str", "double", "bool"]:
                 return ("TYPE", slowo)
-        
+            if slowo in ["true", "false"]:
+                return ("BOOL", slowo)
             return ("ID", slowo)
 
         if z in "+-*/=>!":
@@ -46,18 +47,18 @@ class Lexer:
 
         if z == "{":
             self.i += 1
-            return ("LBRACE", "{")
+            return ("LBRACE", z)
 
         if z == "}":
             self.i += 1
-            return ("RBRACE", "}")
+            return ("RBRACE", z)
         
         if z == "(":
             self.i += 1
-            return ("LPAREN", "{")
+            return ("LPAREN", z)
 
         if z == ")":
             self.i += 1
-            return ("RPAREN", "}")
+            return ("RPAREN", z)
 
         raise ValueError(f"Błąd: {z}")

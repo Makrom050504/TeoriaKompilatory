@@ -1,8 +1,9 @@
 KOLORY = {
-    "LOGIC": "blue",
+    "KEYWORD": "blue",
     "TYPE": "pink",
     "ID": "black",
     "INT": "green",
+    "BOOL": "orange",
     "OP": "red",
     "LBRACE": "purple",
     "RBRACE": "purple",
