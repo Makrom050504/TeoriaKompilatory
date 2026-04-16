@@ -11,4 +11,4 @@
 | LPAREN  | `(` |
 | RPAREN  | `)` |
 | WS      | białe znaki |
-| EOF      | błąd |
+| EOF      | end of file |
