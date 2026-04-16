@@ -11,3 +11,4 @@
 | LPAREN  | `(` |
 | RPAREN  | `)` |
 | WS      | białe znaki |
+| EOF      | błąd |
